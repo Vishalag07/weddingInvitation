@@ -1,0 +1,6 @@
+{
+  "name": "Triambak & Trisha | Wedding Invitation",
+  "description": "Official royal wedding invitation for Triambak & Trisha on 11th February 2027 at KP Palace, Talcher, Odisha. Explore our Golden Journey, ceremonies, RSVP, venue directions, and blessings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

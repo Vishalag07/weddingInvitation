@@ -341,26 +341,19 @@ export const ScratchCard: React.FC<ScratchCardProps> = ({
         </CinematicReveal>
 
         {/* Scratch instruction matching the reference image */}
-        <CinematicReveal delay={120} as="div" className="w-full pt-3 pb-2">
-          <div className="relative flex flex-col items-center justify-center min-h-[100px]">
-            <h3 className="font-royal text-base sm:text-lg uppercase tracking-[0.28em] text-[#a84c55] font-normal text-center">
+        <CinematicReveal delay={120} as="div" className="w-full pt-2 pb-1">
+          <div className="relative flex flex-col items-center justify-center min-h-[65px]">
+            <h3 className="font-royal text-sm sm:text-base uppercase tracking-[0.22em] text-[#a84c55] font-normal text-center">
               {isRevealed ? "DATE REVEALED!" : "SCRATCH TO REVEAL!"}
-              <span className="inline-block ml-2 tracking-normal">✨</span>
+              <span className="inline-block ml-1 tracking-normal">✨</span>
             </h3>
 
             {/* Hand pointer indicating scratch direction */}
-            {!isRevealed ? (
-              <div className="mt-3 text-[#dcb43d] animate-bounce flex items-center justify-center">
-                <Pointer className="w-11 h-11 stroke-[1.8] drop-shadow-sm" />
+
+            {!isRevealed && (
+              <div className="mt-1 text-[#dcb43d] animate-bounce flex items-center justify-center">
+                <Pointer className="w-7 h-7 stroke-[1.8] drop-shadow-sm" />
               </div>
-            ) : (
-              <button
-                type="button"
-                onClick={handleReset}
-                className="mt-3 text-xs uppercase tracking-widest text-[#b48332] hover:text-[#8c6220] transition-colors border-b border-[#b48332]/40 pb-0.5 cursor-pointer font-royal"
-              >
-                Scratch Again ↺
-              </button>
             )}
           </div>
         </CinematicReveal>
